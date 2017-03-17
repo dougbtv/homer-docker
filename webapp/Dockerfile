@@ -23,7 +23,7 @@ RUN git clone https://github.com/sipcapture/homer-ui.git /homer-ui && cd /homer-
 WORKDIR /
 
 RUN chmod -R +x /homer-api/scripts/mysql/*
-RUN cp -R /homer-api/scripts/mysql/* /opt/
+RUN cp -R /homer-api/scripts/mysql/. /opt/
 
 RUN cp -R /homer-ui/* /var/www/html/
 RUN cp -R /homer-api/api /var/www/html/
