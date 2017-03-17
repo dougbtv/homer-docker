@@ -43,8 +43,8 @@ WORKDIR /
 RUN git clone --depth 1 https://github.com/sipcapture/homer-api.git /homer-api
 RUN git clone --depth 1 https://github.com/sipcapture/homer-ui.git /homer-ui
 
-RUN chmod -R +x /homer-api/scripts/*
-RUN cp -R /homer-api/scripts/. /opt/
+RUN chmod -R +x /homer-api/scripts/mysql/*
+RUN cp -R /homer-api/scripts/mysql/. /opt/
 
 RUN cp -R /homer-ui/* /var/www/html/
 RUN cp -R /homer-api/api /var/www/html/

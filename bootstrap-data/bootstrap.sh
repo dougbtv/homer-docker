@@ -20,7 +20,7 @@
 # sed '/\[mysqld\]/a max_connections = 1024\' -i $PATH_MYSQL_CONFIG
 
 # MYSQL SETUP
-SQL_LOCATION=/homer-api/sql
+SQL_LOCATION=/homer-api/sql/mysql
 DATADIR=/var/lib/mysql
 
 # ------- First thing we'll do is wait until mysql is up....
